@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 1st Anniversary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Heart rain background -->
+    <div id="heart-rain"></div>
+
+    <!-- Music toggle -->
+    <button id="music-toggle" class="music-toggle" aria-label="Toggle music">
+        <i class="fas fa-volume-up"></i>
+    </button>
+    <audio id="bg-music" loop autoplay>
+        <source src="Sal Priadi - Gala bunga matahari  Lirik Lagu.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#album" class="nav-link">Album</a>
+            <a href="#letter" class="nav-link">Letter</a>
+            <a href="#music" class="nav-link">Music</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Happy 1st Anniversary</h1>
+            <h2>365 Hari Kita Lalui Bersama</h2>
+            <div class="heart-beat">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="scroll-down">
+                <span>Scroll Down</span>
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Album -->
+    <section id="album" class="album-section">
+        <div class="section-header">
+            <h2 class="section-title">Perjalanan Kita</h2>
+            <div class="section-subtitle">Bukalah beberapa lembaran kenangan indah kita</div>
+        </div>
+        <div class="album-container">
+            <div class="book">
+                <!-- Pages will be added dynamically by JavaScript -->
+            </div>
+            <div class="album-controls">
+                <button id="prev-page" class="album-btn">
+                    <i class="fas fa-chevron-left"></i> Prev
+                </button>
+                <span id="page-indicator">1/6</span>
+                <button id="next-page" class="album-btn">
+                    Next <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letter -->
+    <section id="letter" class="letter-section">
+        <div class="section-header">
+            <h2 class="section-title">My Love Letter</h2>
+            <div class="section-subtitle">Sayangg baca yaa!</div>
+        </div>
+        <div class="letter-container">
+            <div class="letter-paper">
+                <div class="wax-seal">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Kepada sayanggku yang luar biasa,</h3>
+                <div id="typed-text" class="letter-content"></div>
+                <div id="cursor" class="cursor">|</div>
+                <h3 class="letter-closing">Dari sayanggnya kamu</h3>
+                <div class="signature">Bububb</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="music-section">
+        <div class="section-header">
+            <h2 class="section-title">Lagu Kesukaan Kita</h2>
+            <div class="section-subtitle">Melodi yang selalu menemani</div>
+        </div>
+        <div class="music-container">
+            <div class="music-player">
+                <div class="vinyl">
+                    <div class="vinyl-label">
+                        <span>Gala Bunga Matahari</span>
+                    </div>
+                    <div class="vinyl-inner"></div>
+                </div>
+                <div class="music-info">
+                    <h3>Our Special Melody</h3>
+                    <p>Lagu yang selalu sayanggku nyanyiin terus aku juga jadi suka lagunya</p>
+                    <div class="music-controls">
+                        <button id="play-btn" class="control-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="pause-btn" class="control-btn">
+                            <i class="fas fa-pause"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Made with <i class="fas fa-heart pulse"></i> for you on our 1st Anniversary</p>
+            <p>© <span id="year"></span> - Sayanggku Selamanya</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
